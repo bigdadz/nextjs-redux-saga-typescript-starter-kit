@@ -1,10 +1,7 @@
 import { all, call, put, takeLatest } from "@redux-saga/core/effects"
-import axios from "axios"
-import { ITodo } from "../actionTypes/todosActionTypes"
 import { fetchTodosFailure, fetchTodosSuccess, todoTypes } from "../actionCreators/todosActionCreator";
 import { IResponse } from "../actionTypes/IResponse";
-
-const getTodos = () => axios.get<ITodo[]>("https://jsonplaceholder.typicode.com/todos");
+import getTodos from "../../utils/api";
 
 function* fetchTodosSaga() {
   try {
