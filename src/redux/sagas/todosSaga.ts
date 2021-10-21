@@ -1,7 +1,7 @@
 import { all, call, put, takeLatest } from "@redux-saga/core/effects"
+import { getTodos } from "../../utils/services/todosAPI";
 import { fetchTodosFailure, fetchTodosSuccess, todoTypes } from "../actionCreators/todosActionCreator";
 import { IResponse } from "../actionTypes/IResponse";
-import getTodos from "../../utils/api";
 
 function* fetchTodosSaga() {
   try {
