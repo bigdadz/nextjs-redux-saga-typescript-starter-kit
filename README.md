@@ -20,3 +20,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - redux, (actionTypes), (actionCreators), rootReducer
 - redux-saga, rootSaga, saga middleware(store.ts)
 - api services pattern
+
+## Docker
+repo: [nextjs-redux-saga-typescript-starter-kit](https://hub.docker.com/r/bigdadz/nextjs-redux-saga-typescript-starter-kit)
+
+How to run
+```bash
+docker pull bigdadz/nextjs-redux-saga-typescript-starter-kit:latest
+docker run -p 3000:3000 bigdadz/nextjs-redux-saga-typescript-starter-kit:latest 
+```
